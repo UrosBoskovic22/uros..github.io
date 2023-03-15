@@ -48,7 +48,7 @@ header#cover1 {
 .darker{
 	/* background: rgba(0,0,0,0.7);   nije potrebno al neka ga za svaki slucaj */
 	/* background:linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0,0,0, 0.7), rgba(255,255,255,0)); */
-	background:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.9), rgba(0,0,0,0.5));
+	background:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.5), rgba(0,0,0,0.7));
 }
 
 
@@ -317,7 +317,7 @@ header#cover2 {
 	width: 100%
 }
 .darker1 {
-	background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.1), rgba(0,0,0,1));
+	background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.3), rgba(0,0,0,1));
 }
 
 #slika-gt1, #amgLogo img{
@@ -574,7 +574,7 @@ h1, h2, h4 {
 	height: 100vh;
 }
 #cover4 .darker {
-	background:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.1), rgba(0,0,0,1));
+	background:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.3), rgba(0,0,0,1));
 }
 #cover4 #info span {
 	color: var(--black);
