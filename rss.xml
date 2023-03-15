@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>AMG Sports Cars</title>
+			<link></link>
+			<description>Check our updates!</description>
+        <item>
+            <title>AMG GT C Coupe</title>
+            <link></link>
+            <description>Come see our models and prices</description>
+        </item>
+        <item>
+            <title>AMG GT 4-door</title>
+            <link></link>
+            <description>Come see our models and prices</description>
+        </item>
+		<item>
+            <title>AMG GT Black Series</title>
+            <link></link>
+            <description>Come see our models and prices</description>
+        </item>
+    </channel>
+</rss>
