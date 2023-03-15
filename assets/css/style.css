@@ -13,10 +13,10 @@ body {
 
 :root{
 	--white: #fff;
-	--cyan: #00fff8;
 	--mercedesf1: #01F2D1;
 	--mercf1: rgba(7, 81, 89, 0.8);
 	--mercedes: rgb(0, 161, 156);
+	--black: #000;
 }
 
 ul, ol {
@@ -71,7 +71,6 @@ header#cover1 {
 	background-size: cover;
 	width: 100px;
 	height: 100px;
-	/* margin-right: 30%; */
 }
 
 #list {
@@ -82,25 +81,24 @@ header#cover1 {
 
 #list ul li {
 	display: inline-block;
-	color: white;
+	color: var(--white);
 	font-size: 25px;
 	text-transform: uppercase;
-	margin-left: 15px;
-	/* border: 2px solid var(--mercedes); */
+	margin-left: 22px;
 	padding: 12px 12px 8px 12px;
 	border-radius: 3px;
 	transition: all 0.3s;
 	font-weight: 300;
 }
-/* hover vidi kako ces belu i merc */
+
 #list ul li:hover, #list ul li.active-link{
 	background: rgba(255,255,255,0.2);
 	color: var(--mercedesf1);	
-	/* border: 2px solid white; */
+	
 }
 #list ul li.active-link:hover {
 	background: rgba(255,255,255,0.4);
-	color: white;
+	color: var(--white);
 }
 
 
@@ -108,8 +106,8 @@ header#cover1 {
 	padding: 250px 50px 0px 70px;
 }
 
-##info h1, #info h2 {
-	color: white;
+#info h1, #info h2 {
+	color: var(--white);
 }
 
 #cover1 #info h1 {
@@ -131,11 +129,11 @@ header#cover1 {
 
 #info button {
 	margin-top: 35px;
-	background:white;
+	background:var(--white);
 	padding: 8px;
 	font-size: 15px;
 	border-radius: 50px;
-	color: black;
+	color: var(--black);
 	cursor: pointer;
 	transition: all 0.3s;
 	font-weight: 500;
@@ -143,7 +141,7 @@ header#cover1 {
 
 #info button:hover {
 	background: var(--mercedes);
-	color: white;
+	color: var(--white);
 	
 }
 
@@ -154,15 +152,13 @@ header#cover1 {
 
 main {
 	padding-top: 20px;
-	background: black;
+	background: var(--black);
 	
 }
 #gtr, #gt63  {
-	background: black;
+	background: var(--black);
 	width: 100%;
-	/* height: 500px; */
-	/* border: 1px solid white; */
-	color: white;
+	color: var(--white);
 }
 
 
@@ -180,7 +176,7 @@ main {
 .infoo {
 	text-align: center;
 	padding: 7% 0px 20px 0px;
-	color: white;
+	color: var(--white);
 }
 .firstInfoo {
 	padding-top: 0px;
@@ -228,7 +224,6 @@ main {
 }
 .registerButton button:hover {
 	transform: scale(1.22);
-	/* background: white; */
 }
 
 #home #amgLogo img {
@@ -240,11 +235,11 @@ main {
 												
 												
 footer {
-	margin-top: 2%;
-	background: linear-gradient(to bottom, black, var(--mercedes));
+	/* margin-top: 2%; */
+	background: linear-gradient(to bottom, var(--black), var(--mercedes));
 }
 footer .centering {
-	padding: 2% 0%;
+	padding: 1% 0% 0% 0%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -252,32 +247,33 @@ footer .centering {
 
 .socials {
 	text-align: left;
-	/* border-right: 1px solid var(--mercedesf1); */
 	width: 25%;
 }
 
 .socials li, .fastLinks li {
-	color: white;
+	color: var(--white);
 	font-weight: 500;
 	font-size: 20px;
 	transition: all 1s;
 	padding: 1% 0%;
+	font-size: 1rem;
 }
 .socials i {
 	font-size: 22px;
 	margin-right: 2%;
-	transition: all 1s;
+	transition: all 900ms;
 	margin-bottom:1%;
+	font-size: 1rem;
 }
 .socials i:hover {
-	margin-right:15%;
+	margin-right:7%;
 	transform: scale(1.2);
 }
 .socials span {
 	transition: all 900ms;	
 }
 .socials span:hover {
-	margin-left: 10%;
+	margin-left: 5%;
 }
 
 .central {
@@ -287,6 +283,7 @@ footer .centering {
 .central h1{
 	padding: 2% 0%;
 	font-weight: 500;
+	font-size: 1.5rem;
 }
 .borderBottom{
 	border-bottom: 1px solid var(--mercedesf1);
@@ -295,17 +292,18 @@ footer .centering {
 .fastLinks {
 	text-align: right;
 	width: 25%;
-	/* border-left: 1px solid var(--mercedesf1); */
 }
 .fastLinks li:hover {
-	transform: scale(1.1);
+	margin-right: 7%;
 }
 .fastLinks li {
-	text-transform: uppercase;
+	text-transform: lowercase;
+	transition: all 900ms;
 }
 
 
-																	/* GT COUPE */
+/* =========================================================== GT COUPE ====================================== */
+
 header#cover2 {
 	width: 100%;
 	height: 100vh;
@@ -333,7 +331,6 @@ header#cover2 {
 }
 #cover2 #info {
 	width: 20%;
-	/* height: 20%; */
 	background: rgba(255,255,255,0.2);
 	padding: 50px 25px 20px 50px;
 	margin-left: 60px;
@@ -341,7 +338,7 @@ header#cover2 {
 }
 #cover2 #info h1 {
 	font-size: 2rem;
-	color: white;
+	color: var(--white);
 	font-weight: 500;
 
 }
@@ -393,7 +390,7 @@ header#cover2 {
 
 
 h1, h2, h4 {
-	color: white;
+	color: var(--white);
 }
 
 .twosides2 {
@@ -443,13 +440,12 @@ h1, h2, h4 {
 }
 .spec {
 	padding: 5% 0%;
-	/* border-bottom: 1px solid var(--mercedesf1);  */
 }
 
 
 .firstBlock, .secondBlock, .thirdBlock, .fourthBlock {
 	width:25%;
-	border-right: 1px solid white;
+	border-right: 1px solid var(--white);
 	padding: 0px 2%;
 }
 .fourthBlock {
@@ -457,7 +453,7 @@ h1, h2, h4 {
 }
 
 .carName, .acc, .hpPower, .carPrice{
-	color: white;
+	color: var(--white);
 	width: 100%;
 }
 .acc, .hpPower, .carPrice {
@@ -487,14 +483,14 @@ h1, h2, h4 {
 }
 
 .fourthBlock button:hover {
-	background: white;
+	background: var(--white);
 	cursor:pointer;
 }
 
 									
 									
 									
-															/* GT 4-DOOR */
+/* ========================================================== GT 4-DOOR ================================ */
 															
 #cover3 {
 	width: 100%;
@@ -516,7 +512,7 @@ h1, h2, h4 {
 }
 #cover3 #info h1, #cover4 #info h1 {
 	font-size: 2rem;
-	color: white;
+	color: var(--white);
 	font-weight: 500;
 }
 #cover3 #info h2 , #cover4 #info h2{
@@ -538,8 +534,8 @@ h1, h2, h4 {
 }
 
 #info button:hover {
-	background: white;
-	color: black;
+	background: var(--white);
+	color: var(--black);
 }
 
 
@@ -564,7 +560,7 @@ h1, h2, h4 {
 
 
 
-														/* BLACK SERIES */
+/* ========================================================== BLACK SERIES ================================== */
 
 
 
@@ -580,7 +576,7 @@ h1, h2, h4 {
 	background:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.1), rgba(0,0,0,1));
 }
 #cover4 #info span {
-	color: black;
+	color: var(--black);
 }
 
 #gtBS img {
@@ -605,11 +601,14 @@ h1, h2, h4 {
 
 .twosides3 {
 	width: 80%;
-	margin: 0px auto;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 2% 0%;
+}
+.margin-top {
+	margin-top: 10%;
 }
 .aero {
 	width:50%;
@@ -624,13 +623,91 @@ h1, h2, h4 {
 #margin-bottom {
 	margin-bottom: 10%;
 }
+#seePrices {
+	padding-bottom: 5%;
+}
 
 
 
+/* =========================================================== CONTACT ====================================== */
 
 
+#cover5 {
+	background-image: url("../img/building.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+.contact-us {
+	background-color: rgba(255,255,255,0.5);
+	height: 60vh;
+	margin-top:5%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2%;
+	/* position:relative; */
+	/* animation: animacija 1s forwards; */
+}
+#maps, #form {
+	width:45%;
+	position: relative;
+}
+#maps {
+	animation: animacija 1s forwards;
+}
+#form {
+	animation: animacija2 1s forwards;
+	text-align:center;
+}
+#form form div {
+	margin: 3% 0%;
+}
+#form form label {
+	color: var(--white);
+	padding-bottom: 1%:
+}
+#form input {
+	border: none;
+	background:none;
+	border-bottom: 1px solid var(--mercedesf1);
+	color: var(--white);
+	padding: 4px;
+	font-weight: 300;
+	transition: all 500ms;
+}
+#form input:hover {
+	border:1px solid var(--mercedesf1);
+	transform: scale(1.02);
+}
+#form [type=submit] {
+	border:1px solid var(--mercedesf1);
+	transition: all 500ms;
+}
+#form [type=submit]:hover {
+	background: var(--mercedesf1);
+	color: var(--black);
+	font-weight: 500;
+}
 
 
+::placeholder {
+	color: rgba(1,242,209,0.6);
+	text-align: center;
+}
+
+@keyframes animacija{
+    0%{left:-150%;}
+    100%{left:0;}
+
+}
+@keyframes animacija2{
+    0%{right:-100%;}
+    100%{right:0;}
+
+}
 
 
 
@@ -641,18 +718,23 @@ h1, h2, h4 {
 	z-index: 22;
 	font-size: 22px;
 	bottom: 35px;
-	right: 70px;
+	right: 50px;
 	width: 20px;
 	height: 20px;
-	padding: 22px 20px 22px 22px;
+	padding: 18px 17px 20px 18px;
 	border-radius: 5%;
 	cursor: pointer;
 	transition: all 1s;
+}
+#vrh i {
+	transition: all 400ms;
 	color: var(--mercedesf1);
-	/* background: black; */
 }
 
 #vrh:hover{
-	color: black;
+	color: var(--black);
 	background: var(--mercedes);
+}
+#vrh i:hover {
+	color: var(--black);
 }
