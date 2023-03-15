@@ -48,7 +48,7 @@ header#cover1 {
 .darker{
 	/* background: rgba(0,0,0,0.7);   nije potrebno al neka ga za svaki slucaj */
 	/* background:linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0,0,0, 0.7), rgba(255,255,255,0)); */
-	background:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.1), rgba(0,0,0,0.8));
+	background:linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0,0,0,0.2), rgba(0,0,0,0.5));
 }
 
 
