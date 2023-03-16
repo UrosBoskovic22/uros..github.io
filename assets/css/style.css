@@ -694,6 +694,7 @@ h1, h2, h4 {
 #form [type=submit] {
 	border:1px solid var(--mercedesf1);
 	transition: all 500ms;
+	cursor: pointer;
 }
 #form [type=submit]:hover {
 	background: var(--mercedesf1);
