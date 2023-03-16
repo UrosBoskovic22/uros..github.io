@@ -245,7 +245,7 @@ main {
 												
 footer {
 	/* margin-top: 2%; */
-	background: linear-gradient(to bottom, var(--black), var(--mercedes));
+	background: linear-gradient(to bottom, var(--black), rgba(0, 161, 156, 0.7));
 }
 footer .centering {
 	padding: 1% 0% 0% 0%;
@@ -651,15 +651,12 @@ h1, h2, h4 {
 
 .contact-us {
 	background-color: rgba(255,255,255,0.2);
-	/* background-color: rgba(0,0,0,0.7); */
 	height: 60vh;
 	margin-top:5%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 2%;
-	/* position:relative; */
-	/* animation: animacija 1s forwards; */
 }
 #maps, #form {
 	width:45%;
@@ -681,7 +678,8 @@ h1, h2, h4 {
 }
 #form input {
 	border: none;
-	background:none;
+	background: transparent;
+	outline: none;
 	border-bottom: 1px solid var(--mercedesf1);
 	color: var(--white);
 	padding: 4px;
@@ -689,8 +687,11 @@ h1, h2, h4 {
 	transition: all 500ms;
 }
 #form input:hover {
-	border:1px solid var(--mercedesf1);
-	transform: scale(1.02);
+	/* border:1px solid var(--mercedesf1); */
+	transform: scale(1.05);
+}
+#form input:target {
+	border:none;
 }
 #form [type=submit] {
 	border:1px solid var(--mercedesf1);
@@ -701,14 +702,16 @@ h1, h2, h4 {
 	background: var(--mercedesf1);
 	color: var(--black);
 	font-weight: 500;
+	transform: scale(1.1);
+}
+label i {
+	font-weight: 100;
 }
 
 
+
 ::placeholder {
-	/* color: rgba(1,242,209,0.6); */
-	/* color: rgba(1,161,156,1); */
 	color: var(--mercedesf1);
-	/* text-align: center; */
 	font-size: 0.75rem;
 }
 
