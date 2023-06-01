@@ -1,0 +1,487 @@
+@import "var.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+ul, li, a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #000;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: $midnight;
+}
+
+::selection {
+    background-color: $tirkiz;
+    color: $midnight;
+}
+
+
+
+
+header {
+    width: 100%;
+    background-image: url("../img/darkl2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.shader {
+    width: 100%;
+    height: inherit;
+    background-color: rgba($plava,0.9);
+    
+}
+
+.holder {
+    @include centering;
+    padding: 0.75% 0;
+    @include flexJC(space-between);
+    align-items: center;
+
+    animation-name: float-top;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; 
+}
+
+#logo {
+    width: 20%;
+    padding-top: 0.5%;
+    img {
+        width: 100%;
+    }
+} 
+
+nav {
+
+    ul {
+        @include flexJC(space-between);
+    }
+    ul li {
+        display: inline-block;
+
+        a{
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5rem;
+            color: $tirkiz;
+            margin: 0rem 2rem ;
+            position: relative;
+        }
+        
+        a::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: $tirkiz;
+            border-radius: 30px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .3s;
+        }
+        a:hover::after{
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+    }
+}
+
+
+
+#info {
+    @include centering;
+    padding: 8% 0;
+    animation-name: float-under;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    text-align: center;
+
+     h1, h2, p {
+        color: $tirkiz;
+    }
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    h2 {
+        margin: 1% 0;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $tirkiz;
+    }
+    p {
+        font-size: 2rem;
+        font-weight: 400;
+        color: $siva;
+        padding-top: 5%;
+    }
+    
+    button {
+        cursor: pointer;
+        padding: 1%;
+        font-size: 1rem;
+        margin-top: 3%;
+        background: rgba($siva,0.2);
+        width: 5%;
+        color: $tirkiz;
+
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: all 300ms ease-out;
+    }
+    button:hover {
+        transform: translatey(15%);
+    }
+    button i {
+        color: $tirkiz;
+    }
+    span {
+        color: $siva;
+    }
+}
+
+
+
+
+
+
+
+
+#utilities {
+    padding: 5% 0%; 
+    background-color: $plava2;
+
+    h3 {
+        @include naslov;
+    }
+    h4 {
+        @include podnaslov;
+    }
+
+    .wrapper {
+        @include flexJC(space-between);
+        @include centering;
+        padding: 2% 0;
+
+        
+        .services {
+            width: 25%;
+            background-color: rgba($tirkiz,0.1);
+            color: $siva;
+            padding: 2%;
+            text-align: center;
+            height: 30%;
+            transition: all 400ms;
+            border-radius: 25px;
+            border: 1px solid rgba($gray,1);
+        
+            p {
+                // text-align: justify;
+                margin-top: 5%;
+                font-size: 1rem;
+                line-height: 200%;
+            }
+        
+            i {
+                font-size: 3rem;
+                color: $tirkiz;
+                
+                background-color: none;
+            }
+            
+        }
+    }
+}
+
+.bs1:hover {
+    transform: translatex(-5%);
+}
+.bs2:hover {
+    transform: translatey(5%);
+}
+.bs3:hover {
+    transform: translatex(5%);
+}
+
+
+#skills {
+    width: 100%;
+    padding: 5% 0%;
+    background-color: $plava;
+
+    h3 {
+        @include naslov;
+        padding-bottom: 1%;
+    }
+    h4 {
+        @include podnaslov;
+    }
+    .wrapper {
+        @include flexJC;
+        @include centering;
+        width: 65%;
+        padding: 2% 0%;
+           
+        
+
+        .html, .sass, .js, .seo {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px;
+            background-color: $tirkiz;
+           
+            i {
+                font-size: 3rem;
+                transition: all 300ms;
+                color: $plava;
+            }
+            transition: all 300ms ease-in-out;
+        }
+        .html:hover, .sass:hover, .js:hover, .seo:hover  {
+            background-color: $plava;
+            transform: scale(1.05);
+            i{
+                color: $siva;
+            }
+        }
+        .seo i {
+            font-size: 2rem;
+        }
+    }
+
+   
+}
+
+
+
+
+
+#about-me {
+    background-color: $plava2;
+    width: 100%;
+    padding: 5% 0%;
+
+    h3 {
+        @include naslov;
+    }
+    h4 {
+        @include podnaslov;
+    }
+
+    .wrapper {
+        @include centering;
+        @include flexJC;
+        align-items: center;
+        width: 90%;
+        padding: 2% 0;
+    }
+
+    #picture {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        
+       
+    }
+    #bio {
+        background: rgba($gray, 1);
+        border-radius: 14px;
+        width: 60%;
+        color: $plava2;
+        font-size: 1.5rem;
+        text-align: justify;
+        padding-bottom: 2%;;
+        
+
+        h3 {
+            margin: 2% 0%;
+            text-align: center;
+            color: $plava2;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 0.2rem;
+            padding: 0;
+        }
+        .row {
+            width: 100%;
+            padding: 0.5% 5%;
+            @include flexJC;
+            
+        }
+        .left-row {
+            width: 20%;
+            color: $plava2;
+            border-left: 1px solid $plava2;
+            padding-left: 1%;
+        }
+        .right-row {
+            width: 70%;
+            border-left: 1px solid $plava2;
+            padding-left: 1%;
+        }
+    }
+}
+#picture img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+#contact {
+    background: $plava;
+    padding: 2% 0%;
+
+    .wrapper {
+        @include centering;
+        width: 60%;
+        padding: 5% 0;
+
+        h3 {
+            @include naslov;
+            
+        }
+        h4 {
+            @include podnaslov;
+        }
+    
+
+    #input-holder{
+        width: 100%;
+        @include flexJC(space-between);
+        padding-top: 5%;
+    
+        .input {
+            width: 48%;
+            #phone, #email, #name, #last-name {
+                width: 100%;
+                background-color: $siva;
+                padding: 1%;
+                margin: 3% 0;
+            }    
+        }
+
+        label {
+            color: $tirkiz;
+        }
+        input {
+            outline: none;
+            border: none;
+            color: $plava;   
+        }
+        ::placeholder {
+            color: $midnight;
+        }
+    
+        :focus {
+            outline: none;
+        }
+        button {
+            background-color: $siva;
+            padding: 0.5%;
+            border: none;
+            cursor: pointer;
+            transition: all 300ms;
+        }
+        button:hover {
+            background-color: $plava;
+            color: $siva;
+            }
+        }
+    }
+}
+
+
+
+
+footer {
+    padding: 2% 0;
+    color: $siva;
+    background: $plava2;
+
+    .wrapper{
+        @include centering;
+        @include flexJC(space-between);
+    }
+
+    #creator {
+        width: 15%;
+        font-size: 1.2rem;
+        i {
+            margin-right: 2%;
+        }
+    }
+
+    #logo-footer {
+        width: 10%;
+        margin-right: 5%;
+        img {
+            width: 100%;
+        }
+    }
+
+    #links {
+        @include flexJC(space-between);
+        width: 10%;
+    }
+
+    i {
+        color: $siva;
+        font-size: 1.2rem;
+        transition: all 200ms;
+    }
+    i:hover {
+        color: $tirkiz;
+    }
+}
+    
+
+
+
+
+@keyframes float-under {
+    0% {
+        opacity: 0;
+        transform: translatey(300px);
+      }
+      100% {
+        opacity: 1;
+        transform: translatey(0px);
+      }
+    
+}
+@keyframes float-top {
+    0% {
+        opacity: 0;
+        transform: translatey(-200px);
+      }
+      100% {
+        opacity: 1;
+        transform: translatey(0px);
+      }
+    
+}
+
+
