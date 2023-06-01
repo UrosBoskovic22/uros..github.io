@@ -1,0 +1,60 @@
+@import "style.scss";
+
+@media (max-width: 1441px) {
+    #info {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #logo {
+        width: 22%;
+    }
+   
+    #info {
+        width: 45%;
+        h1 {
+            font-size: 3rem;
+        }
+        button {
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #logo {
+        width: 25%;
+        img{
+            width: 70%;
+        }
+    }
+    nav {
+        ul li a {
+            font-size: 1.3rem;
+        }
+    }
+
+    #info {
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        button {
+            width: 35%;
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    header {
+        width: 100%;
+    }
+}
